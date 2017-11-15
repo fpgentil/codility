@@ -37,4 +37,5 @@ def solution(n)
     count += 1
   end
   max -= 1
+  max < 0 ? 0 : max
 end
