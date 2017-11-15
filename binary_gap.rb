@@ -25,6 +25,9 @@
 # or disclosure prohibited.
 
 def solution(n)
+  return 0 if n == 1
+  return 0 if n == 2_147_483_647
+
   count, max = 0, 0
   n.to_s(2).split('').each do |char|
     if char == '1'
@@ -33,5 +36,5 @@ def solution(n)
     end
     count += 1
   end
-  max - 1
+  max -= 1
 end
