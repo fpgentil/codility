@@ -36,6 +36,5 @@ def solution(n)
     end
     count += 1
   end
-  max -= 1
-  max < 0 ? 0 : max
+  max <= 0 ? 0 : max - 1
 end
