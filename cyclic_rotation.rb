@@ -44,5 +44,5 @@
 
 def solution(a, k)
   k.times { a.unshift(a.pop) }
-  a
+  a.compact
 end
