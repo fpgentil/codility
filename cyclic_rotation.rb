@@ -43,6 +43,6 @@
 # of the assessment.
 
 def solution(a, k)
-  k.times { a.rotate! }
+  k.times { a.unshift(a.pop) }
   a
 end
