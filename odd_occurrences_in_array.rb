@@ -37,5 +37,7 @@
 # Elements of input arrays can be modified.
 
 def solution(a)
-  (a - a.select{|elem| a.count(elem) > 1}).first
+  a.sort.each_slice(2) do |elem|
+    return elem[0] if elem[0] != elem[1]
+  end
 end
